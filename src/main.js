@@ -2,6 +2,12 @@
  * FUNCTIONS
  */
 
+export {
+    B2_MAX_POLYGON_VERTICES,
+    B2_DEFAULT_CATEGORY_BITS,
+    B2_DEFAULT_MASK_BITS
+} from './include/collision_h.js';
+
 // Maths
 export {
     b2MinFloat, b2MaxFloat, b2AbsFloat, b2ClampFloat, b2MinInt, b2MaxInt, b2AbsInt, b2ClampInt,
@@ -139,6 +145,13 @@ export {
     b2Body_GetContactCapacity,
     b2Body_GetContactData,
     b2Body_ComputeAABB
+} from './include/body_h.js';
+
+export {
+    b2GetBodyFullId, b2GetBody, b2GetBodyTransformQuick, b2GetBodyTransform, b2MakeBodyId,
+    b2ShouldBodiesCollide, b2IsBodyAwake, b2GetBodySim, b2GetBodyState, b2WakeBody, b2UpdateBodyMassData,
+    b2MakeSweep,
+    resetProperties
 } from './include/body_h.js';
 
 // Shape Management
