@@ -388,7 +388,7 @@ export function WorldStep (data)
         const start = performance.now();
         b2World_Step(data.worldId, fixedTimeStep, subStepCount);
         const end = performance.now();
-        totalTime = (end - start) / 1000;
+        totalTime += (end - start) / 1000;
         _accumulator -= fixedTimeStep;
     }
 
