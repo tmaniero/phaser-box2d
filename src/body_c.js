@@ -1272,7 +1272,7 @@ export function b2Body_ApplyAngularImpulse(bodyId, impulse, wake)
  * Gets the type of a body in the physics world.
  * @function b2Body_GetType
  * @param {b2BodyId} bodyId - The identifier for the body to query.
- * @returns {b2BodyType} The type of the specified body.
+ * @returns {number} The type of the specified body.
  * @description
  * Retrieves the body type (static, kinematic, or dynamic) for a given body ID
  * by looking up the body in the physics world using the provided identifier.
@@ -1296,7 +1296,7 @@ export function b2Body_GetType(bodyId)
  * @function b2Body_SetType
  * @summary Changes the type of a body in the physics simulation.
  * @param {b2BodyId} bodyId - The ID of the body to modify
- * @param {b2BodyType} type - The new body type to set (static, kinematic, or dynamic)
+ * @param {number} type - The new body type to set (static, kinematic, or dynamic)
  * @returns {void}
  * @description
  * Updates a body's type and handles all necessary simulation changes including:
