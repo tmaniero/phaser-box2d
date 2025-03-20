@@ -2382,7 +2382,7 @@ export function b2World_OverlapCircle(worldId, circle, transform, filter, fcn, c
     worldContext.world = world;
     worldContext.fcn = fcn;
     worldContext.filter = filter;
-    worldContext.proxy = b2MakeProxy(circle.center, 1, circle.radius);
+    worldContext.proxy = b2MakeProxy([ circle.center ], 1, circle.radius);
     worldContext.transform = transform;
     worldContext.userContext = context;
 
